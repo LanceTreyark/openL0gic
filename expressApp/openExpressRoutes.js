@@ -269,7 +269,30 @@ app.get('/user-portal', authenticate, (req, res) => {
 // levelOneForms-  Proprietary forms level one directory. (basic stuff, no logic)
 app.use('/levelOneForms', authenticate, express.static(path.join(__dirname, 'levelOneForms')));
 
+/** CLIENT SIDE CODE
+ * 
+ <button id="updateScreenshotsButton">Update Screenshots</button>
 
+ <script>
+  // Add an event listener to the button
+  document.getElementById('updateScreenshotsButton').addEventListener('click', function () {
+    // Send a POST request to the server to trigger the event
+    fetch('/updateScreenshots', {
+      method: 'POST'
+    })
+      .then(function (response) {
+        if (response.ok) {
+          console.log('Screenshots updated successfully');
+        } else {
+          console.error('Error updating screenshots:', response.status);
+        }
+      })
+      .catch(function (error) {
+        console.error('Error updating screenshots:', error);
+      });
+  });
+</script>
+ */
 
 
 // Function to take a screenshot of a web page and save it to a file
