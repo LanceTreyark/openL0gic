@@ -1,0 +1,55 @@
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+/* Column */
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* Text Center */
+.text-center {
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #333;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Alert */
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
